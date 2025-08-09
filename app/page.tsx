@@ -125,7 +125,7 @@ export default function Page() {
                 <header className="sticky top-0 z-20 border-b border-zinc-200 bg-white/95 backdrop-blur">
                     <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
                         <div className={cn("text-sm tracking-[0.22em] text-zinc-700", plexMono.className)}>
-                            BACKEND PORTFOLIO
+                            Sangharsh.me
                         </div>
                         <nav className="hidden gap-6 text-sm md:flex">
                             <a href="#about" className="text-zinc-700 hover:text-zinc-900">
