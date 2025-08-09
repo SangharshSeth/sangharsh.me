@@ -6,10 +6,11 @@ import { IBM_Plex_Serif, IBM_Plex_Mono } from 'next/font/google'
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { Github, Linkedin, Mail, Download, ArrowRight, ChevronRight, Terminal, CircleIcon, GithubIcon, MapPin, Briefcase } from 'lucide-react'
+import { GithubLogoIcon, LinkedinLogoIcon, EnvelopeSimpleIcon, DownloadSimpleIcon, ArrowRightIcon, CaretRightIcon, TerminalIcon, CircleIcon, GitlabLogoSimpleIcon as GithubIcon, MapPinSimpleIcon, BriefcaseMetalIcon, EnvelopeIcon } from '@phosphor-icons/react'
 import { cn } from "@/lib/utils"
 import { useEffect, useState } from "react"
 import { MatrixRain } from "@/components/ui/matrix-rain"
+import { BriefcaseIcon } from "lucide-react"
 
 const plexSerif = IBM_Plex_Serif({
     weight: ["400", "600", "700"],
@@ -147,14 +148,9 @@ export default function Page() {
                                     <GithubIcon className="h-4 w-4" />
                                 </Button>
                             </Link>
-                            <Link aria-label="LinkedIn" href="https://linkedin.com/in/sangharshseth">
-                                <Button variant="outline" size="icon" className="h-8 w-8 border-zinc-300 transition-colors hover:border-zinc-900">
-                                    <Linkedin className="h-4 w-4" />
-                                </Button>
-                            </Link>
                             <Link aria-label="Email" href="mailto:sangharshbgh@gmail.com">
                                 <Button size="sm" className="gap-2 bg-zinc-900 text-white transition-colors hover:bg-black">
-                                    <Mail className="h-4 w-4" />
+                                    <EnvelopeSimpleIcon className="h-4 w-4" />
                                     Email
                                 </Button>
                             </Link>
@@ -201,15 +197,15 @@ export default function Page() {
 
                                 <div className="space-y-3">
                                     <div className="flex items-center gap-2 text-sm text-zinc-600">
-                                        <MapPin className="h-4 w-4" />
+                                        <MapPinSimpleIcon className="h-4 w-4" />
                                         <span>Bangalore, India</span>
                                     </div>
                                     <div className="flex items-center gap-2 text-sm text-zinc-600">
-                                        <Briefcase className="h-4 w-4" />
+                                        <BriefcaseIcon className="h-4 w-4" />
                                         <span>Associate Staff Engineer at Nagarro</span>
                                     </div>
                                     <div className="flex items-center gap-2 text-sm text-zinc-600">
-                                        <Mail className="h-4 w-4" />
+                                        <EnvelopeIcon className="h-4 w-4" />
                                         <Link className="hover:text-zinc-900 transition-colors" href="mailto:sangharshbgh@gmail.com">
                                             sangharshbgh@gmail.com
                                         </Link>
@@ -227,14 +223,14 @@ export default function Page() {
                                 <div className="flex flex-wrap gap-3">
                                     <Link href="/resume.pdf">
                                         <Button variant="outline" className="gap-2 border-zinc-300 transition-colors hover:border-zinc-900 group">
-                                            <Download className="h-4 w-4 transition-transform group-hover:-translate-y-0.5" />
+                                            <DownloadSimpleIcon className="h-4 w-4 transition-transform group-hover:-translate-y-0.5" />
                                             Resume
                                         </Button>
                                     </Link>
                                     <Link href="#projects">
                                         <Button className="gap-2 bg-zinc-900 text-white transition-colors hover:bg-black group">
                                             View Projects
-                                            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                                            <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                                         </Button>
                                     </Link>
                                 </div>
@@ -312,7 +308,7 @@ export default function Page() {
                                                 )}
                                             >
                                                 <span>{item}</span>
-                                                <ChevronRight className="h-4 w-4 text-zinc-400" />
+                                                <CaretRightIcon className="h-4 w-4 text-zinc-400" />
                                             </div>
                                         ))}
                                     </div>
@@ -368,13 +364,13 @@ export default function Page() {
                                             <div className="mt-auto pt-4 flex gap-2">
                                                 <Link href={`https://github.com/sangharshseth/${proj.name.toLowerCase()}`}>
                                                     <Button variant="outline" size="sm" className="gap-2 border-zinc-300">
-                                                        <Github className="h-4 w-4" />
+                                                        <GithubIcon className="h-4 w-4" />
                                                         Code
                                                     </Button>
                                                 </Link>
                                                 <Link href={`https://github.com/sangharshseth/${proj.name.toLowerCase()}#readme`}>
                                                     <Button size="sm" className="gap-2 bg-zinc-900 text-white hover:bg-black">
-                                                        <Terminal className="h-4 w-4" />
+                                                        <TerminalIcon className="h-4 w-4" />
                                                         Readme
                                                     </Button>
                                                 </Link>
@@ -496,13 +492,13 @@ export default function Page() {
                                 <div className="flex flex-wrap items-center gap-3">
                                     <Link href="mailto:sangharshbgh@gmail.com">
                                         <Button className="gap-2 bg-zinc-900 text-white transition-colors hover:bg-black group">
-                                            <Mail className="h-4 w-4 transition-transform group-hover:-translate-y-0.5" />
+                                            <EnvelopeSimpleIcon className="h-4 w-4 transition-transform group-hover:-translate-y-0.5" />
                                             sangharshbgh@gmail.com
                                         </Button>
                                     </Link>
                                     <Link href="tel:+918018208166">
                                         <Button variant="outline" className="gap-2 border-zinc-300 transition-colors hover:border-zinc-900 group">
-                                            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                                            <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                                             +91 8018208166
                                         </Button>
                                     </Link>
