@@ -143,17 +143,17 @@ export default function Page() {
                         </nav>
                         <div className="flex items-center gap-2">
                             <Link aria-label="GitHub" href="https://github.com/sangharshseth">
-                                <Button variant="outline" size="icon" className="h-8 w-8 border-zinc-300">
+                                <Button variant="outline" size="icon" className="h-8 w-8 border-zinc-300 transition-colors hover:border-zinc-900">
                                     <GithubIcon className="h-4 w-4" />
                                 </Button>
                             </Link>
                             <Link aria-label="LinkedIn" href="https://linkedin.com/in/sangharshseth">
-                                <Button variant="outline" size="icon" className="h-8 w-8 border-zinc-300">
+                                <Button variant="outline" size="icon" className="h-8 w-8 border-zinc-300 transition-colors hover:border-zinc-900">
                                     <Linkedin className="h-4 w-4" />
                                 </Button>
                             </Link>
                             <Link aria-label="Email" href="mailto:sangharshbgh@gmail.com">
-                                <Button size="sm" className="gap-2 bg-zinc-900 text-white hover:bg-black">
+                                <Button size="sm" className="gap-2 bg-zinc-900 text-white transition-colors hover:bg-black">
                                     <Mail className="h-4 w-4" />
                                     Email
                                 </Button>
@@ -226,15 +226,15 @@ export default function Page() {
 
                                 <div className="flex flex-wrap gap-3">
                                     <Link href="/resume.pdf">
-                                        <Button variant="outline" className="gap-2 border-zinc-300">
-                                            <Download className="h-4 w-4" />
+                                        <Button variant="outline" className="gap-2 border-zinc-300 transition-colors hover:border-zinc-900 group">
+                                            <Download className="h-4 w-4 transition-transform group-hover:-translate-y-0.5" />
                                             Resume
                                         </Button>
                                     </Link>
                                     <Link href="#projects">
-                                        <Button className="gap-2 bg-zinc-900 text-white hover:bg-black">
+                                        <Button className="gap-2 bg-zinc-900 text-white transition-colors hover:bg-black group">
                                             View Projects
-                                            <ArrowRight className="h-4 w-4" />
+                                            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                                         </Button>
                                     </Link>
                                 </div>
@@ -261,7 +261,7 @@ export default function Page() {
                                         alt="Portrait of the backend engineer"
                                         width={900}
                                         height={680}
-                                        className="h-auto w-full scale-[1.01] rounded-sm object-cover grayscale"
+                                        className="h-auto w-full scale-[1.01] rounded-sm object-cover grayscale transition-transform duration-700 hover:scale-[1.03]"
                                         priority
                                     />
                                 </div>
@@ -495,14 +495,14 @@ export default function Page() {
                                 </div>
                                 <div className="flex flex-wrap items-center gap-3">
                                     <Link href="mailto:sangharshbgh@gmail.com">
-                                        <Button className="gap-2 bg-zinc-900 text-white hover:bg-black">
-                                            <Mail className="h-4 w-4" />
+                                        <Button className="gap-2 bg-zinc-900 text-white transition-colors hover:bg-black group">
+                                            <Mail className="h-4 w-4 transition-transform group-hover:-translate-y-0.5" />
                                             sangharshbgh@gmail.com
                                         </Button>
                                     </Link>
                                     <Link href="tel:+918018208166">
-                                        <Button variant="outline" className="gap-2 border-zinc-300">
-                                            <ArrowRight className="h-4 w-4" />
+                                        <Button variant="outline" className="gap-2 border-zinc-300 transition-colors hover:border-zinc-900 group">
+                                            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                                             +91 8018208166
                                         </Button>
                                     </Link>
